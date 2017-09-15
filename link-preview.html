@@ -7,6 +7,7 @@
       a:hover > iframe {display:block;position:fixed;}
       a iframe {
         /*border: 0px;*/
+        pointer-events: none; /* Remove this if you want to interact with the previews */
         display:none;
         width: 400px;
         height: 300px;
@@ -31,5 +32,6 @@
     <a href="https://boards.4chan.org/wg/">/wg/
       <iframe scrolling="no" src="https://boards.4chan.org/wg/"></iframe>
     </a>
+    <p><a href="https://en.wikipedia.org/wiki/Lorem_ipsum">Lorem ipsum dolor sit amet<iframe scrolling="no" src="https://en.wikipedia.org/wiki/Lorem_ipsum"></iframe></a>, consectetur adipiscing elit. Aliquam lacinia lorem vel vestibulum facilisis. Duis facilisis augue a sollicitudin bibendum. Nunc congue neque eu nunc vestibulum placerat. Donec ut elit bibendum ligula commodo scelerisque ac in ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac tortor et felis commodo dapibus sit amet et tellus. Aliquam vulputate commodo leo. </p>
   </body>
 </html>
