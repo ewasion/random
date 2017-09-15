@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      #link1:hover ~ #frame1 {display:block;}
+      #link2:hover ~ #frame2 {display:block;}
+      #link3:hover ~ #frame3 {display:block;}
+      iframe {
+        /*border: 0px;*/
+        display:none;
+        width: 400px;
+        height: 300px;
+        zoom: 0.4;
+        -moz-transform: scale(0.4);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.4);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.4);
+        -webkit-transform-origin: 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- For @Sage#8327 <@98159713845248000> on Discord -->
+    <a href="https://pomf.cat/" id="link1">pomf</a>
+    <a href="https://css-tricks.com/" id="link2">css-tricks</a>
+    <a href="https://boards.4chan.org/wg/" id="link3">/wg/</a>
+    <iframe scrolling="no" src="https://pomf.cat/" id="frame1"></iframe>
+    <iframe scrolling="no" src="https://css-tricks.com/" id="frame2"></iframe>
+    <iframe scrolling="no" src="https://boards.4chan.org/wg/" id="frame3"></iframe>
+  </body>
+</html>
